@@ -1,0 +1,63 @@
+@font-face {
+    font-family: font1;
+    src: url(../images/Raleway_Thin.ttf);
+}
+
+body{
+	background-color: gray;
+	margin: 0px;
+}
+#contact_bar{
+	background-color: #c7c1c1;
+    height: 10%;
+    margin: 0px auto;
+    padding: 10px;
+    width: 100%;
+    right: 100px;
+
+}
+#text_style{
+	font-family: "font1";
+	color: black;
+	text-align: right;
+}
+#logo_header{
+	width: 30px;
+	padding: 10px auto;
+	margin: 10px 10px 10px 25px;
+}
+ul{
+	list-style-type: none;
+    text-decoration: none;
+    /*float: right;*/
+    margin: 0px;
+    padding: 0px;
+    background-color: #ff6868;
+    width:100%;
+}
+li{
+	float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    background-color: purple;
+    transition-property: background-color; 
+    -webkit-transition-property:background-color;
+    transition-duration: 5s;
+}
+
+.box:hover{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}

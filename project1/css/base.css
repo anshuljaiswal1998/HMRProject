@@ -1,0 +1,110 @@
+@font-face {
+    font-family: font1;
+    src: url(../images/Raleway_Thin.ttf);
+}
+
+body{
+	/*background-color: gray ;*/
+	font-family: "font1";
+	margin: 0px;
+	padding:0px;
+}
+.nb{
+	background-color: tomato;
+	height: 10%;
+	width: 100%;
+	position: fixed;
+	/*float: right;*/
+	overflow: hidden;
+}
+a:link{
+	color: pink;
+}
+.nb_header{
+	font-size: 30px;
+	position: relative;
+	text-align: left;
+	float: left;
+	padding: 0px 8px;
+	text-decoration: none;
+	/*font-size: 17px;*/
+}
+.nb_text{
+	font-size: 30px;
+	position: relative;
+	text-align: right;
+	padding: 14px 16px;
+	margin-right: 10px;
+	text-decoration: none;
+	/*font-size: 17px;*/
+}
+.active_nb{
+	background-color: gray;
+}
+.cover_bar{
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-position: center;
+	margin-top: -22px;
+}
+.cover_text{
+	color: white;
+	font-family: "font1";
+	margin: 20%;
+	text-align: center;
+	size: 500px;
+	/*object-position: top;*/
+}
+.navbar{
+	background-color: black;
+	/*size: 200px;*/
+}
+#overlay{
+	background-color: #9c9c9c;
+	margin: 0% auto;
+	position: fixed;
+	height: 100%;
+	/*display: block;*/
+	width: 100%;
+}
+#inner_block{
+    background-color: #3e3e56;
+    margin: 10% auto;
+    width: 40%;
+    padding-top: 12px;
+}
+#emailid{
+    border-color: green;
+    margin: 10px 25px;
+}
+#text{
+	color: White;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 15px;
+}
+#button_sub{
+	color: black;
+	margin-left: 170px;
+	display: block;
+	margin: 10px auto;
+}
+#close{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    right: -10px;
+    float: right;
+    top: -17px;
+    border: none;
+}
+#close:hover{
+	background-color: white;
+	cursor: pointer;
+}

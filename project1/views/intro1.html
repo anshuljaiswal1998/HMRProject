@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="../css/intro.css"> -->
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/animate.css">
+
+<title>Intro </title>
+<style type="text/css">
+	*{
+		padding:0;
+		margin: 0px;
+	}
+	.intro{
+		background-image: url('../images/bg2.jpg');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+	.intro h1 {
+		text-align: center;
+		font-size: 7em;
+		color: tomato;
+	}
+
+
+</style>
+</head>
+<body >
+<div class="intro">
+	<h1>Hello </h1>
+</div>
+
+
+<script type="text/javascript">
+	(function() {
+		var windowH = $(window).height(),
+			introEl = $('div.intro'),
+			introHeadingH = introEl.find('h1').height();
+		introEl.css('padding', (windowH - introHeadingH)/2 + 'px 0');
+
+	})();
+</script>
+
+</body>
+</html>

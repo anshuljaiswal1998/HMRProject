@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/intro.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/animate.css">
+
+<title>Intro </title>
+
+</head>
+<body>
+<div class="intro">
+	<h1>The Hatred Club <span id="Scrollbtn">click</span></h1>
+</div>
+<div class="content" id="content">
+	<h2>Endward </h2>
+		<p class="container">Edwards' largest swindle involved forged letters from cotton brokers in New Orleans, which he used to secure bank drafts for large sums that he then cashed. His fabrications caught up with him and he was arrested and tried for the forgeries in June 1842. Convicted partly because his distinctive good looks made him memorable and easily recognizable, and partly from making the same spelling errors in his fakes, Edwards was sentenced to 10 years in prison and died in 1847 while incarcerated. Several sensational accounts of his offenses and trial were published after his death, and he was mentioned in Herman Melville's 1853 short story "Bartleby, the Scrivener".</p>
+
+<div class="row container">
+	<div class="col-md-4 col-sm-6 col-md-offset-1 fadeInDown wow m-5" style="text-align: center;">
+		<div class="small_box p-3 m-3">
+			Edwards' largest swindle involved forged letters from cotton brokers in New Orleans, which he used to secure bank drafts for large sums that he then cashed. His fabrications caught up with him and he was arrested and tried for the forgeries in June 1842.
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-6 col-md-offset-1 fadeInDown wow m-5">
+		<div class="small_box">
+			Edwards' largest swindle involved forged letters from cotton brokers in New Orleans, which he used to secure bank drafts for large sums that he then cashed. His fabrications caught up with him and he was arrested and tried for the forgeries in June 1842. 
+		</div>
+	</div>
+</div>
+<button id="scrollTop">Scrool Top</button>
+</div> <!-- content Div -->
+<!-- WOW Script -->
+<script src="../js/wow.min.js"></script>
+<style type="text/css">
+	#scrollTop{
+		position: fixed;
+    right: -200px;
+    bottom: 20px;
+    border: 0px;
+    color: white;
+    background: red;
+    padding: 5px;
+    border-radius: 6px;	
+	}
+</style>
+<script>
+new WOW().init();
+</script>
+
+<!-- Intro Silder -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	(function() {
+		var windowH = $(window).height(),
+			introEl = $('div.intro'),
+			introHeadingH = introEl.find('h1').height();
+		introEl.css('padding', (windowH - introHeadingH)/2 + 'px 0');
+		$("#Scrollbtn").on('click',function(){
+			$('html, body').animate({
+        scrollTop: $("#content").offset().top
+    }, 1000);
+		});
+		$("#scrollTop").click(function(){
+			$('html, body').animate({
+        scrollTop: 0		
+    }, 1000);
+		});
+
+		$(document).on('scroll',function(){
+			if($(window).scrollTop()>700){
+			   console.log("coming here");
+			       $("#scrollTop").animate({
+        right: "20px"
+      }, 0);
+
+			}else{
+				console.log("coming in else");
+				    $("#scrollTop").animate({
+        right: "-200px"
+      }, 0);
+
+			}
+		});
+	})();
+
+	 $(window).resize(function(){
+	 	    $(".intro").css({'height':window.outerHeight+"px"});
+	 });
+	 $(document).ready(function(){
+	 	$(".intro").css({'height':window.outerHeight+"px"});
+	 });	
+</script>
+</body>	
+</html>		

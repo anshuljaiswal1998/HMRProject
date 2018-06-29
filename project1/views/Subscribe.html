@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subscribe!</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<script type="text/javascript">
+		function check_form(){
+			// alert("Hi");
+			var succ = true;
+			var input_email = document.getElementById("email").value;
+			if(input_email==""){
+				succ = false;
+			}
+
+			var input_password = document.getElementById("password").value;
+			if(input_password==""){
+				succ = false;
+			}
+
+			if(succ==false){
+				alert("Incorrect Form");
+			}
+			return succ;
+		}
+
+		function close_window() {
+			var ele = document.getElementById("inner_block").style.display = "none";
+			return ele;
+		}
+		function show_window() {
+			var ele = document.getElementById("inner_block").style.display = "block";
+			return ele;
+		}
+
+	</script>
+</head>
+<body>
+<div id="overlay">		
+	<button onclick="show_window()">Show</button>
+	<div id="inner_block">
+		<button id="close" onclick="close_window()">x</button>
+		<form action="action.html" onsubmit="return check_form()">
+		<div id = "text">
+		Email: <div id ="emailid"><input type="text" id="email" > </div>
+		Password: <div id ="emailid"><input type="Password" id="password"> </div>
+		</div>
+		<button id="button_sub" type="sumbit"> Subscribe</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>

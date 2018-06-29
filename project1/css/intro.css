@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.intro{
+	background-image: url('http://ng-girls.org/img/sections-background/eclipse.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.intro h1 {
+	text-align: center;
+	font-size: 7em;
+	color: tomato;
+}
+.content{
+	height: 1000px;
+	padding-top: 100px;
+	background-color: gray;
+}
+.content h2, .content p{
+/*	width: 60%;
+*/	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.small_box{
+	animation-duration: 1s;
+	margin: 10px 10px;
+	background-color: tomato;
+	margin: 10px;
+}
+ 
+			 @media(max-width:500px){
+				.intro h1{
+					font-size:50px;	
+					margin-top:30px
+				}
+			 }
